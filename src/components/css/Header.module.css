@@ -1,0 +1,34 @@
+.header {
+    grid-area: h;
+    background-color: rgb(41, 128, 163);
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-template-areas: 
+    "n i"
+    "s i";
+    color:aliceblue;
+  }
+  
+  .header img {
+    width: 80px;
+    display: block;
+    margin: auto
+  }
+
+  .name {
+    grid-area: n;
+    margin-left: 20px;
+    font-size: 20px;
+
+  }
+
+  .surname {
+    grid-area: s;
+    margin-left: 20px;
+    font-family: Arimo-Bold;
+    font-size: 30px;
+  }
+
+  .img {
+    grid-area: i;
+  }

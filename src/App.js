@@ -1,33 +1,20 @@
+import React from 'react';
 import './App.css';
+import Header from './components/Header';
+import Nav from './components/Nav';
+import Profile from './components/Profile';
+
+
 
 const App = () => {
   return (
-    <div>
+    <div className='app_wrapper'>
       <Header/>
-      <List/>
+      <Nav/>
+      <Profile/>
     </div>
+
   );
 }
-
-const Header = () => {
-  return (
-    <div className="App">
-      <div>Какая то новая функция</div>
-     </div>
-  );
-}
-
-const List = () => {
-  return (
-    <div className="App">
-        <ul>
-          <li>Проверка связи мать его за ногу</li>
-          <li>Проверка связи мать его за ногу</li>
-          <li>Проверка связи мать его за ногу</li>
-        </ul>
-      </div>
-  );
-}
-
 
 export default App;

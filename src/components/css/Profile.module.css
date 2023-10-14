@@ -1,0 +1,43 @@
+.content {
+    grid-area: c;
+  }
+  
+  .content img {
+    height: 100px;
+    width: 100%;
+  }
+  
+  .avatar {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    
+  }
+  
+  .avatar ul {
+    list-style-type: none;
+    list-style-position: inside;
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 15px;
+   }
+  
+   .avatar li {
+      margin-bottom: 5px;
+   }
+  
+   .name {
+      font-family: Arimo-Bold;
+      font-size: 20px;
+   }
+  
+  .avatar img {
+    width: 100px !important;
+    height: 100px !important;
+    margin-left: 20px;
+  }
+  
+  .post {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 15px;
+  }

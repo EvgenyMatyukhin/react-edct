@@ -1,0 +1,20 @@
+.nav {
+    font-family: Arimo-Bold;
+    font-size: 15px;
+    grid-area: n;
+    background-color: rgb(41, 128, 163);
+  }
+  
+  .nav ul {
+    list-style-type: none;
+    
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  
+  .nav li{
+    margin-bottom: 10px;
+  }
