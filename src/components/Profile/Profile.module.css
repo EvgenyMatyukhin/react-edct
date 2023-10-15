@@ -31,13 +31,9 @@
    }
   
   .avatar img {
-    width: 100px !important;
-    height: 100px !important;
-    margin-left: 20px;
+    width: 120px !important;
+    height: 120px !important;
+    border-radius: 70px;
+    border: 1px solid rgb(119, 118, 118);
   }
   
-  .post {
-    margin-left: 20px;
-    margin-top: 10px;
-    font-size: 15px;
-  }

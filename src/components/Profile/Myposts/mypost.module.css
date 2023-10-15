@@ -1,0 +1,42 @@
+p {
+  font-family: Arimo-Bold;
+  font-size: 25px;
+}
+
+.new_post {
+  display: grid;
+  width: 400px;
+  grid-template-areas:
+  "h h"
+  "n c";
+  padding-bottom: 20px;
+}
+
+textarea {
+  resize: none;
+  width: 400px;
+  height: 50px;
+}
+
+textarea::placeholder {
+  color: darkgrey;
+  
+}
+
+.area {
+  grid-area: h;
+}
+
+.button1 {
+  margin-top: 10px;
+  margin-right: 40px;
+  grid-area: n;
+  justify-self: end;
+}
+
+.button2 {
+  grid-area: c;
+  margin-top: 10px;
+  justify-self: start;
+}
+

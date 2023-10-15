@@ -1,0 +1,41 @@
+.post {
+    display: grid;  
+    grid-template-areas: 
+    "a b b"
+    "a c h";
+    grid-template-columns: 50px 70px auto;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 15px;
+ }
+
+.img {
+  grid-area: a;
+}
+
+.post img {
+  grid-area: a;
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 50px;
+  border: 1px solid rgb(119, 118, 118);
+  margin-right: 20px;
+}
+
+.text {
+  grid-area: b;
+}
+
+.like {
+  grid-area: c;
+  color: dimgrey;
+  font-size: 10px;
+}
+
+.button {
+  grid-area: h;
+  font-size: 10px;
+  width: 40px;
+  color: dimgrey;
+}
+

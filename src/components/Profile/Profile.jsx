@@ -1,5 +1,6 @@
 import React from 'react';
-import style from './css/Profile.module.css'
+import MyPost from './Myposts/mypost';
+import style from './Profile.module.css'
 
 const Profile = () => {
     return <div className={style.content}>
@@ -22,17 +23,7 @@ const Profile = () => {
                 </ul>
             </div>
         </div>
-        <div className={style.post}>
-            <div>
-                Пост 1
-            </div>
-            <div>
-                Пост 2
-            </div>
-            <div>
-                Пост 3
-            </div>
-        </div>
+        <MyPost/>
     </div>
 };
 

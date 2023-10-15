@@ -1,6 +1,8 @@
 .nav {
+    width: 200px;
+    margin-right: 20px;
     font-family: Arimo-Bold;
-    font-size: 15px;
+    font-size: 20px;
     grid-area: n;
     background-color: rgb(41, 128, 163);
   }
