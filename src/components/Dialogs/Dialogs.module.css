@@ -1,0 +1,40 @@
+.title {
+    font-family: Arimo-Bold;
+    color: rgb(128, 128, 128);
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.dialogs {
+    display: grid;
+    grid-template-columns: 4fr 10fr;
+  
+
+}
+
+.dialogs_items {
+    font-size: 10px;
+    font-family: Arimo-Regular;
+}
+
+.item {
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: 50px auto;
+    font-size: 15px;
+    font-family: Arimo-Regular;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.item img {
+    width: 30px;
+}
+
+.dialogs_massages {
+   
+}
+
+.massege {
+
+}

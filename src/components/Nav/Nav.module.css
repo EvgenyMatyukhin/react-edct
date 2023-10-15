@@ -17,6 +17,12 @@
     color: rgb(255, 255, 255);
   }
   
+  .nav a.active {
+    color: rgb(220, 255, 23);
+    font-size: 25px;
+  }
+
   .nav li{
     margin-bottom: 10px;
   }
+
