@@ -1,5 +1,4 @@
 import React from 'react';
-import Dialogs from '../Dialogs/Dialogs';
 import MyPost from './Myposts/mypost';
 import style from './Profile.module.css'
 import User from './ProfileUser/ProfileUser';
