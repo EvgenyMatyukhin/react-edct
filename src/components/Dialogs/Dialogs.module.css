@@ -31,10 +31,15 @@
     width: 30px;
 }
 
-.dialogs_massages {
+.item a {
+    text-decoration: none;
+    color: black;
+}
+
+.dialogs_messages {
    
 }
 
-.massege {
+.message {
 
 }

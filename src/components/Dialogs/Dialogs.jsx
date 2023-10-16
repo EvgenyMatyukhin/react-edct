@@ -1,42 +1,25 @@
 import React from 'react';
 import style from './Dialogs.module.css';
+import Dialog from './Dialog';
+import Message from './Message';
 
-const Dialogs = (props) => {
+const Dialogs = () => {
     return (
         <div>
-            <div className={style.title}>Сообщения</div>
+         <div className={style.title}>Сообщения</div>
             <div className={style.dialogs}>
                 <div className={style.dialogs_items}>
-                    <div className={style.item}>
-                        <img src='logo512.png'></img>
-                        <a>Иван</a>
-                    </div>
-                    <div className={style.item}>
-                        <img src='logo512.png'></img>
-                        <a>Сергей</a>
-                    </div>
-                    <div className={style.item}>
-                        <img src='logo512.png'></img>
-                        <a>Николай</a>
-                    </div>
-                    <div className={style.item}>
-                        <img src='logo512.png'></img>
-                        <a>Роман</a>
-                    </div>
-                    <div className={style.item}>
-                        <img src='logo512.png'></img>
-                        <a>Марина</a>
-                    </div>
-                    <div className={style.item}>
-                        <img src='logo512.png'></img>
-                        <a>Илья</a>
-                    </div>
+                    <Dialog name='Иван' id='1'/> 
+                    <Dialog name='Сергей' id='2'/> 
+                    <Dialog name='Николай' id='3'/> 
+                    <Dialog name='Марина' id='4'/> 
+                    <Dialog name='Илья' id='5'/> 
                 </div>
-                <div className={style.dialogs_massages}>
-                    <div className={style.massege}>Привет</div>
-                    <div className={style.massege}>Как Дела</div>
-                    <div className={style.massege}>Как сам?</div>
-                    <div className={style.massege}>Пошли за мясом</div>
+                <div className={style.dialogs_messages}>
+                    <Message message='Привет'/>
+                    <Message message='Как дела'/>
+                    <Message message='Пошли гулять'/>
+                    <Message message='где ключи?'/>
                 </div>
 
             </div>
