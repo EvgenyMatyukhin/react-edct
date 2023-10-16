@@ -9,8 +9,6 @@ import News from './components/News/News';
 import Music from './components/Music/Music';
 import Setting from './components/Setting/Setting';
 
-
-
 const App = (props) => {
   return (
     <BrowserRouter>
