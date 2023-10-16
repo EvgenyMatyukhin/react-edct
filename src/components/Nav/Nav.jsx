@@ -6,7 +6,7 @@ const Nav = () => {
     return ( <nav className={style.nav}>
         <ul>
             <li><NavLink to="/profile" className = { navData => navData.isActive ? style.active : undefined }>Профиль</NavLink></li>
-            <li><NavLink to="/massages" className={ navData => navData.isActive ? style.active : undefined }>Сообщения</NavLink></li>
+            <li><NavLink to="/messages" className={ navData => navData.isActive ? style.active : undefined }>Сообщения</NavLink></li>
             <li><NavLink to="/news" className={ navData => navData.isActive ? style.active : undefined }>Новости</NavLink></li>
             <li><NavLink to="/music" className={ navData => navData.isActive ? style.active : undefined }>Музыка</NavLink></li>
             <li><NavLink to="/settings" className={ navData => navData.isActive ? style.active : undefined }>Настройки</NavLink></li>

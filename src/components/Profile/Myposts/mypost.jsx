@@ -2,7 +2,10 @@ import React from 'react';
 import style from './mypost.module.css'
 import Post from './Post/post';
 
-const MyPost = () => {
+const MyPost = (props) => {
+
+    let posts = props.posts.map ( p => <Post massage={p.name} like={p.like}/>);
+
     return <div className={style.content}>
         <div className={style.post}>
             <p>Болталка</p>
@@ -15,8 +18,7 @@ const MyPost = () => {
                     <button>Очистить</button>
                 </div>
             </div>
-            <Post massage='Это первый пост.' like='12'/>
-            <Post massage='Это второй пост.' like='8'/>
+            {posts}
         </div>
     </div>
 };
