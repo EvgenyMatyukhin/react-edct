@@ -9,7 +9,10 @@ const Profile = (props) => {
             <img src='wallpaper.jpg'></img>
         </div> */}
         <User/>
-        <MyPost posts={props.posts}/>
+        <MyPost posts={props.profile.posts}
+        dispatch={props.dispatch}
+        newPost={props.profile.newPost}
+        />
     </div>
 };
 
