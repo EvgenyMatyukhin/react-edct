@@ -1,5 +1,5 @@
 import React, { createRef } from 'react';
-import { addMessageActionCreator, addNewMessageActionCreator } from '../../../redux/state';
+import { addMessageActionCreator, addNewMessageActionCreator } from '../../../redux/dialogs_reducer';
 import style from './newmessage.module.css'
 
 
