@@ -1,7 +1,16 @@
 const ADD_POST = 'ADD-POST';
 const ADD_NEW_POST = 'ADD-NEW-POST';
 
-const profileReducer =(state, action) => {
+let initialState = {
+    posts: [
+    { id: 1, post: 'Первый пост', like: '12' },
+    { id: 2, post: 'Второй пост', like: '8' },
+    { id: 3, post: 'Пошла жара!!!', like: '355' }],
+   
+ newPost: ''
+};
+
+const profileReducer =(state = initialState, action) => {
     switch(action.type) {
         case ADD_POST: {
             let newPost = {

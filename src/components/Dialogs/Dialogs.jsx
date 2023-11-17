@@ -18,9 +18,10 @@ const Dialogs = (props) => {
                 </div>
                 <div className={style.dialogs_messages}>
                     {messages}
+                    <MyMessage dispatch={props.dispatch} dialogs={props.dialogs}/>
                 </div>
             </div>
-            <MyMessage dispatch={props.dispatch} dialogs={props.dialogs}/>
+            
         </div>
     );
 

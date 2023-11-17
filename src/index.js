@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import store from './redux/store';
+import store from './redux/redux_store';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,5 +16,8 @@ let renderEntire = (state) => { // оборачиваем отрисовку с�
 
 renderEntire(store.getState());
 
-store.subscribe(renderEntire); // передаем renderEntire в state без экспорта и импорта через props
+store.subscribe(() => {
+  let state = store.getState();
+  renderEntire(state);
+}); // передаем renderEntire в state без экспорта и импорта через props
 
