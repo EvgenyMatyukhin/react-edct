@@ -1,5 +1,4 @@
 import React, { createRef } from 'react';
-import { addMessageActionCreator, addNewMessageActionCreator } from '../../../redux/dialogs_reducer';
 import style from './newmessage.module.css'
 
 
@@ -9,12 +8,12 @@ const MyMessage = (props) => {
                                         // 2. Присваиваем идентификатор textarea через атрибут 'ref='**
 
     let addMessage = () => {
-        props.dispatch(addMessageActionCreator());
+        props.addMessage();
     };
 
     let addNewMessage = () => {
         let text = newMessage.current.value; //забираем с помощью метода current содержимое (value) из textarea
-        props.dispatch(addNewMessageActionCreator(text)); //позволяет редактировать textarea из state
+        props.addNewMessage(text); //позволяет редактировать textarea из state
     };
 
     return <div className={style.content}>
